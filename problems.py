@@ -33,3 +33,16 @@ def problem_3(n):
 		if d * d > n:
 			if n > 1:
 				return n
+
+def problem4():
+	result = 0
+	for x in range(100, 999):
+		for y in range(100, 999):
+			if isPalindrome(x * y) and x * y > result:
+				result = x * y
+
+	return result
+
+def isPalindrome(x):
+	'''Returns true if x is a palindrome'''
+	return str(x) == str(x)[::-1]
