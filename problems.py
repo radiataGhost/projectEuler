@@ -21,3 +21,15 @@ def problem_2():
 		last = [last[1], fibonacci]
 
 	return result
+
+def problem_3(n):
+	'''Returns the largest prime facotrs of a positive integer'''
+	factors = []
+	d = 2
+	while n > 1:
+		while n % d == 0:
+			n /= d
+		d += 1
+		if d * d > n:
+			if n > 1:
+				return n
