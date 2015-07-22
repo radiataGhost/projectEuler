@@ -1,4 +1,4 @@
-def problem_1:
+def problem_1():
 	'''Return the sum of all numbers divisble by 5 or 3 under 1000'''
 	numbers = range(1000)
 	result = 0
@@ -8,7 +8,7 @@ def problem_1:
 
 	return result
 
-def problem_2:
+def problem_2():
 	'''Return the sum of all even numbered fibonacci numbers under 4 million'''
 	fibonacci = 3
 	last = [1, 2]
